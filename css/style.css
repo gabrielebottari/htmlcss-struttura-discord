@@ -17,11 +17,115 @@ html {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
+    max-width: 1200px;
 }
+
+/* 
+    HEADER
+*/
+
+header {
+    background-color: #add8e6;
+}
+
+.header-nav {
+    display: flex;
+    padding: 10px 0;
+}
+
+.header-section {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav > * {
+    padding: 10px; 
+}
+
+aside div {
+    justify-content: flex-end;
+}
+
+header aside {
+    width: 20%;
+    display: flex;
+}
+
+aside:last-child {
+    justify-content: flex-end;
+}
+
+header main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-section > * {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section aside {
+    width: 40%;
+}
+
+section main {
+    width: 60%;
+}
+
+section div {
+    width: 100%
+}
+
+
 
 /* 
     DEBUG
 */
 
+.header-main-container {
+    background-color: #add8e6;
+}
+
+.header-nav > * {
+    background-color: #daa520;
+    border: 1px dashed black;
+}
+
+.header-section {
+    background-color: #00008b;
+}
+
+.header-section > section {
+    
+    background-color:#ee82ee;
+    border: 1px dashed black;
+    min-height: 300px;
+}
+
+section aside {
+    background-color: #ffc0cb;
+    border: 1px dashed black;
+    min-height: 500px;
+}
+
+section main {
+    background-color: #1e90ff;
+    border: 1px dashed black;
+    min-height: 500px;
+}
+
+section div {
+    background-color: #228b22;
+    border: 1px dashed black;
+    min-height: 600px;
+}
