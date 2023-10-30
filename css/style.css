@@ -16,9 +16,8 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+body {
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 /* 
@@ -32,6 +31,17 @@ header {
 .header-nav {
     display: flex;
     padding: 10px 0;
+    width: 100%;
+}
+
+.header-top-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-section {
@@ -40,7 +50,7 @@ header {
 }
 
 .header-nav > * {
-    padding: 10px; 
+    padding: 10px;   
 }
 
 aside div {
@@ -64,14 +74,26 @@ header main {
 
 .header-section > * {
     width: 75%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.container > section {
+/* 
+    MAIN
+*/
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-container > * {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+.section-container > section > * {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 section aside {
@@ -90,12 +112,18 @@ section div {
     FOOTER
 */
 
-.footer-top-container {
+.footer-top-container{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    margin-bottom: 20px;
 }
 
-.footer-main-container aside {
+.footer-top-container > * {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-side {
     width: 30%;
 }
 
@@ -108,24 +136,28 @@ section div {
     width:25%;
 }
 
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .footer-nav {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.footer-nav > * {
+.footer-nav * {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
 }
 
-
 /* 
     DEBUG
 */
 
-.header-main-container {
+.header-background {
     background-color: #add8e6;
 }
 
@@ -134,7 +166,7 @@ section div {
     border: 1px dashed black;
 }
 
-.header-section {
+.header-background-bottom {
     background-color: #00008b;
 }
 
@@ -163,16 +195,15 @@ section div {
     min-height: 600px;
 }
 
-/*main > .container > *:nth-of-type(2n+2) {
-    
+.background-main-container:nth-of-type(2n+2) {
     background-color: #d3d3d3;
-}*/
+}
 
-footer {
+.footer-background {
     background-color: #23272a;
 }
 
-.footer-top-container aside {
+.footer-side {
     background-color: #f08080;
     border: 1px dashed black;
     min-height: 500px;
